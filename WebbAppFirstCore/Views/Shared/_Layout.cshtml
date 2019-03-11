@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Mattias</h1>
+        <nav>
+            <ol>
+                <li>
+                    @Html.ActionLink("Home","index")
+                 
+                </li>
+                <li>
+                    @Html.ActionLink("Golf","Swing")
+                 
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <p>Made by:&copy;  Mattias Gustavsson </p>
+    </footer>
+</body>
+</html>
