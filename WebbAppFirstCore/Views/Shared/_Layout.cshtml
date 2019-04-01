@@ -12,12 +12,26 @@
         <nav>
             <ol>
                 <li>
-                    @Html.ActionLink("Home","index")
-                 
+                    @Html.ActionLink("About Me", "index")
+
                 </li>
                 <li>
-                    @Html.ActionLink("Golf","Swing")
-                 
+                    @Html.ActionLink("Golf", "Swing")
+
+                </li>
+                <li>
+                  
+                    @Html.ActionLink("Kontakt", "Kontakt")
+                </li>
+                <li>
+                
+                    @Html.ActionLink("Bakery", "Index", "Bakery")
+                </li>
+                <li>
+                    @Html.ActionLink("Todo session", "Index", "Todomemo")
+                </li>
+                <li>
+                    @Html.ActionLink("Make To Do", "MakeToDo", "Todomemo")
                 </li>
             </ol>
         </nav>
@@ -26,6 +40,7 @@
         @RenderBody()
     </div>
     <footer>
+        <div> @DateTime.Now</div> 
         <p>Made by:&copy;  Mattias Gustavsson </p>
     </footer>
 </body>

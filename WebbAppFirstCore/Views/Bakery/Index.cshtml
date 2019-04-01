@@ -1,0 +1,21 @@
+﻿@model List<cake>
+@{
+    ViewData["Title"] = "Bakery Index";
+}
+
+<h2>Bakery Index</h2>
+<form method="post">
+    <input type="text" name="name" value="" />
+    <input type="number" min="0" name="price" value="" />
+    <input type="submit" value="Create" />
+</form>
+<table>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@item.Id</td>
+        <td>@item.Name</td>
+        <td>@item.Price</td>
+    </tr>
+    }
+</table>
